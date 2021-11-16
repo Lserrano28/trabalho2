@@ -1,0 +1,197 @@
+body{
+    background-color: black;
+    color:#fff;
+}
+/* ---------------- menu --------------*/
+
+#mainmenu{
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#mainmenu .logo{
+    width: 100px;
+    border-radius: 50px;
+    background-color: #fff;
+}
+#mainmenu .logo:hover{
+    transform: scale(1.3);
+    -webkit-transition: all .35s ease;
+    -moz-transition: all .35s ease;
+    -ms-transition: all .35s ease;
+    -o-transition: all .35s ease;
+    transition: all .35s ease;
+}
+.menu ul, .menu li ,.socialmenu ul, .socialmenu li{
+    margin: 0;
+    padding: 0;
+}
+.menu ul, .socialmenu ul {
+    background: gray;
+    list-style: none;
+    width: 100%;
+}
+.menu li, .socialmenu li{
+    float: left;
+    position: relative;
+    width:auto;
+}
+.menu a {
+    background: #fff;
+    color: #000;
+    display: block;
+    font: bold 12px/20px sans-serif;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: all .35s ease;
+    -moz-transition: all .35s ease;
+    -ms-transition: all .35s ease;
+    -o-transition: all .35s ease;
+    transition: all .35s ease;
+}
+
+.menu li:hover a , .socialmenu li:hover a{
+   -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+
+    transform: scale(1.3);
+}
+
+.socialmenu a{
+    background: #fff;
+    color: #000;
+    display: inline-block;
+    
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: all .35s ease;
+    -moz-transition: all .35s ease;
+    -ms-transition: all .35s ease;
+    -o-transition: all .35s ease;
+    transition: all .35s ease;
+}
+
+ .btn{
+    display: inline-block;
+    width: 15px;
+    height: 30px;  
+    margin: 0px;
+    border-radius: 58%;
+
+  }
+  .btn i{
+    line-height: 30px;
+    font-size: 13px;
+    transition: 0.2s linear;
+  }
+  .btn:hover i{
+    transform: scale(1.3);
+    color: #aaa;
+  }
+ 
+/* ---------------- main --------------*/
+h1 {
+    text-align: center;
+    padding-top: 30px;
+}
+#sobrec{
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    }
+
+#rightmain{
+    width: 25%;
+
+    }
+#leftmain{
+    width: 50%;
+
+    }
+#leftmain img{
+    width: 50%;
+}
+#rightmain{
+    color:#fff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+#leftmain{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* ---------------- portifolio --------------*/
+
+#portifolio{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/* ---------------- contato --------------*/
+#contato{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column; 
+
+}
+#nome,#sexo,#email,#escolha,#peso,#altura,#tamanho,#detalhes{
+padding-right: 30px;
+}
+
+   .form-element-field {outline: none;
+    height: 1.5rem;
+    display: block;
+    background: #141414;
+    padding: 0.125rem 0.125rem 0.0625rem;
+    font-size: 1rem;
+    border: 0 solid transparent;
+    line-height: 1.5;
+    width: 200px;
+    color: #333;
+    box-shadow: none;
+    
+    transition: opacity 0.28s ease;
+    will-change: opacity;}
+
+    form{
+    border-radius: 14px;
+    background: #3434347a;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+    transition: all 0.56s cubic-bezier(0.25, 0.8, 0.25, 1);
+    max-width: 500px;
+    padding: 30px;
+    margin: 50px auto;
+    }
+
+/* ---------------- footer --------------*/
+  
+footer{
+    background-color: #151414;
+    color:#757575;
+    position: absolute;
+    bottom: 0;
+    width: 99%;
+    margin: 0px;
+    padding:0px;
+    overflow: hidden;
+    text-align: center;
+}
+    
+ 
+
+ 
+ 
+ 
