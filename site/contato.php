@@ -1,3 +1,40 @@
+<?php
+    if(isset($_POST['submit'])){
+        // print_r('nome: ' . $_POST['nome']);
+        // print_r('<br>']);
+        // print_r('sexo: ' . $_POST['sexo']);
+        // print_r('<br>']);
+        // print_r('email: ' . $_POST['email']);
+        // print_r('<br>']);
+        // print_r('escolha: ' . $_POST['escolha']);
+        // print_r('<br>']);
+        // print_r('peso: ' . $_POST['peso']);
+        // print_r('<br>']);
+        // print_r('altura: ' . $_POST['altura']);
+        // print_r('<br>']);
+        // print_r('tamanho pé: ' . $_POST['tamanhope']);
+        // print_r('<br>']);
+        // print_r('conte: ' . $_POST['conte']);
+        // print_r('<br>']);
+        
+        include_once('config.php');
+
+        $nome = $_POST['nome'];
+        $sexo = $_POST['sexo'];
+        $email = $_POST['email'];
+        $escolha = $_POST['escolha'];
+        $peso = $_POST['peso'];
+        $altura = $_POST['altura'];
+        $tamanhope = $_POST['tamanhope'];
+        $conte = $_POST['conte'];
+
+        $result = mysqli_query($conexao, "INSERT INTO usuarios(nome,sexo,email,escolha,peso,altura,tamanhope,conte) VALUES ($nome,$sexo,$email,$escolha,$peso,$altura,$tamanhope,$conte)")
+
+    }
+    ?>
+    
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -32,7 +69,7 @@
     <main>
         <h1 id="contatoh1">Contato</h1>
     <div id="contato">
-        <form action="" method="get" class="infoPranchas">
+        <form action="contato.php" method="POST" class="infoPranchas">
         <table border="0" aria-describedby="precos">
             <tr>
                 <th colspan="2" id="nome">Informações para fabricação de prancha</th>
@@ -55,7 +92,7 @@
             <tr>
                 <td>
                     <label for="email">Digite seu email: </label>
-                    <input type="email" name="nome" id="email" required class="form-element-field">
+                    <input type="email" name="email" id="email" required class="form-element-field">
                 </td>
                 <td>
                     <label for="escolha">Escolha o tipo de prancha: </label>
